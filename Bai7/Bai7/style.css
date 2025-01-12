@@ -1,0 +1,17 @@
+header{
+    border: 2px greenyellow solid;
+    border-radius:20px;
+    text-align: center;
+}
+#container{
+    border: 2px greenyellow solid;
+    border-radius:20px;
+    text-align: center;
+}
+footer{
+    float: left;
+}
+b{
+    font-size: larger;
+    color: #912a2a;
+}
