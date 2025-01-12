@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactus</title>
+    <style>
+        #container{
+            border: 1px rgb(116, 116, 239) solid;
+            width: 700px;
+            padding-bottom: 20px;
+        }
+        fieldset {
+          border: 2px solid #333;    =
+          padding: 10px;              /* Khoảng cách bên trong */
+            width: auto;
+        }
+        .who{
+            margin-right: 54px ;
+        }
+        label ,input {
+            margin: 5px auto;
+        }
+        #message{
+            margin-left: 15px;
+        }
+        #chinhmess{
+        display: flex;           /* Sử dụng Flexbox */
+        align-items: center;     /* Căn giữa theo chiều dọc */
+        }
+        #chinhmess div {
+            width: 60px;
+        }
+        span{
+            padding-right: 90px;
+        }
+      </style>
+</head>
+<body>
+   <div id="container">
+        <footer>
+            <h1>Contact US</h1>
+        </footer>
+        <div id="mesage">
+            <form action="#">
+                <fieldset>
+                    <legend>Your mesage</legend>
+                    <label class="who" for="towho">To</label>
+                    <input type="text" name="towho" id="towho" placeholder="Exemple Cafe">
+                    <br>
+                    <label for="email">Your email</label>
+                    <input type="text" name="email" id="email">
+                    <br>
+    <div id="chinhmess">
+                     <div>   <label for="message">Message</label></div>
+                        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+    </div>
+                    <label for="file">Attach File</label>
+                    <input type="file" name="file" id="file">
+                </fieldset>
+                <fieldset>
+                    <legend>How you found us:</legend>
+                    <p>How did you hear of us
+                    <select name="trinhduyet" id="trinhduyet">
+                    <option value="google">Google</option>
+                    <option value="J97">Thiên lý ơi</option>
+                </select>
+                 </p>
+                 <div>
+                   <span> Newsletter</span>
+                    <input type="checkbox" name="letter" id="letter">
+                    <label for="letter">Ensure this box is checked if you would like to receive email updates</label>
+                 </div>
+                </fieldset>
+                <input type="button" value="Send mesage">
+            </form>
+        </div>
+   </div>
+</body>
+</html>

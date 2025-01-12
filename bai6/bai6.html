@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài from</title>
+    <style>
+        .title{
+            background-color: #00FDFF;
+            border: 1px black solid;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 4px 0px rgb(151, 150, 150); 
+        }
+        .title div {
+            width: 300px;
+
+        }
+        #vienduoi{
+            border-bottom: 1px black solid;
+            
+        }
+        #vientren{
+            border-top: 1px black solid;
+        }
+        .title div h1 {
+            margin: 0;       
+            padding: 0;   
+        }
+        #container{
+            width: 700px;
+            border: 1px black solid;
+            background-color: #8CCDFF;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center;    /* Căn giữa theo chiều dọc */
+        }
+        #bieumau {
+        text-align: center; 
+}
+        #table1{
+            border-collapse: separate;
+            margin: 0 auto;
+            
+        }
+        #table2{
+
+            /* border: 1px black solid; */
+            table-layout: fixed;
+            border-bottom: 2px rgb(114, 111, 111) solid;
+            width: 550px;
+            padding-bottom: 10px;
+        }
+        #table3{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 550px;
+        }
+        #table4 {
+            padding-top: 10px;
+            border-top: 2px rgb(114, 111, 111) solid;
+            table-layout: fixed;
+        }
+        #table4 #cot1 {
+            width: 190px;
+        }
+        tr th {
+            text-align: center;
+            /* border: 1px black solid; */
+            border-collapse: collapse;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+        tr,td{
+            /* border: 1px black solid; */
+            }
+        input[type="text1"]{
+            width: 93%;
+            margin: 0 auto;
+        }
+        input[type="textlastname"]{
+            width: 50%;
+            margin: 0 auto;
+        }
+        input[type="textadd"]{
+            width: 50%;
+        }
+        input[type="textcity"]{
+            width: 30%;
+        }
+        input[type="textstate"]{
+            width: 8%;
+        }
+        input[type="textzip"]{
+            width: 12%;
+        }
+        input[type="textcontry"]{
+            width: 22%;
+        }
+        td {
+    text-align: left; /* Căn phải nội dung trong ô */
+}
+    .cot1{
+            width: 190px;
+            text-align: left;
+        }
+        .cot2{
+            width: 100px ;
+        }
+    .cot3{
+        width: 70px;
+    }
+    .bang3cot1{
+        width: 190px;
+    }
+    .bang3cot2{
+        width: 100px;
+    }
+    .bang3cot3{
+        width: ;
+    }
+    .cotcuoi{
+        width: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <footer>
+<div class="title">
+                <div><h1 id="vienduoi">&#9731;Jackson</h1></div>
+                <div><h1 id="vientren">Electronics</h1></div>
+</div>
+        </footer>
+                <div id="bieumau">
+                    <h1 >Registration Form</h1>
+                    <p>Register your Jackson Electronics product here</p>
+                    <form action="#">
+                        <table id="table2">
+                            <tr>
+                                <td class="cot1"><label for="firstname">First Name:</label></td>
+                                <td class="cot2"><input type="text1" name="" id="firstname"></td>
+                                <td class="cot3"><label for="lastname">Lastname:</label></td>
+                                <td class="cotcuoi"> <input type="textlastname" name="" id="lastname"></td>
+                            </tr>
+                            <tr>
+                                <td class="cot1"><label for="add1">Address #1:</label></td>
+                                <td colspan="3"><input type="textadd" name="" id="add1"></td>
+                            </tr>
+                            <tr>
+                                <td class="cot1"><label for="add2">Address #2:</label></td>
+                                <td colspan="3"><input type="textadd" name="" id="add2"></td>
+                            </tr>
+                            <tr>
+                                <td class="cot1"><label for="city">City:</label></td>
+                                <td colspan="4" class="cot2dong4"><input type="textcity" name="" id="city">
+                                    <label for="state">State:</label>
+                                    <input type="textstate" name="" id="state">
+                                    <label for="zip">Zip:</label>
+                                    <input type="textzip" name="" id="zip">
+                                </td>
+    
+                            </tr>
+                            <tr>
+                                <td class="cot1"><label for="contry">Country:</label></td>
+                                <td colspan="3"><input type="textcontry" name="" id="contry" placeholder="Việt Nam"></td>
+                            </tr>
+    
+                        </table>
+                        <table id="table3">
+                            <tr>
+                                <td class="bang3cot1">
+                                    <label for="product">Product:</label>
+                                </td>
+                                <td class="bang3cot2">
+                                    <select name="product" id="product">
+                                    <option value="ScanMaster">ScanMaster</option>
+                                    <option value="DoKhung">DoKhung</option>
+                                </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="DatePurchased">Date Purchased</label>
+                                </td>
+                                <td colspan="2">
+                                    <input type="text" name="Date Purchased" id="DatePurchased" size="15px">
+                                </td>
+    
+                            </tr>
+                            <tr>    
+                                <td>
+                                    <label for="Serial">Seria#</label>
+                                </td>
+                                <td> <input type="text" name="Serial" id="Serial" size="15px"></td>
+                            </tr>
+                            <tr>    
+                                <td rowspan="3">
+                                    Used for:
+                                </td>
+                                <td>
+                                    <input type="radio" name="khanhcute" id="home">
+                                    <label for="home">Home</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="khanhcute" id="edu">
+                                    <label for="edu">Educational Instintion</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="khanhcute" id="bus">
+                                    <label for="bus">Business</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="khanhcute" id="other">
+                                    <label for="other">Other</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="khanhcute" id="gov">
+                                    <label for="gov">govermment</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">System(check all that apply):</td>
+                                <td>
+                                    <input type="checkbox" name="khanhcheck" id="windows">
+                                    <label for="windows">Windows</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="khanhcheck" id="unix">
+                                    <label for="unix">UNIX</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="khanhcheck" id="mac">
+                                    <label for="mac">Macintosh</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="khanhcheck" id="otherr">
+                                    <label for="otherr">Other</label>
+                                </td>
+                            </tr>
+                        </table>
+                        <table id="table4">
+                            <tr>
+                                <td id="cot1">
+                                    <label for="comment">Comments?</label>
+                                </td>
+                                <td >
+                                    <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+    
+    
+                    </form>
+                </div>
+<div>                <input type="button" value="Click to register">                 <input type="button" value="Click to cancel"></div>
+
+        </div>
+</body>
+</html>

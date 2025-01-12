@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 a</title>
+    <style>
+        #benngoai{
+            width: 550px;
+            border: 1px rgb(207, 204, 204) solid;
+            border-collapse: separate; /* Để kích hoạt border-spacing */
+            border-spacing: 5px; /* Tạo khoảng cách giữa các ô */
+            margin: 20px auto; /* Tạo khoảng cách bên ngoài bảng */
+}
+        #bentrong{
+            border-top: 1px solid rgb(207, 204, 204); /* Viền trên */
+            border-left: 1px solid rgb(207, 204, 204); /* Viền trái */
+            border-bottom: 1px solid rgb(207, 204, 204); /* Viền dưới */
+            border-right: 1px double black; /* Viền phải đậm hơn, kiểu double */
+            padding: -1px; /* Tạo khoảng cách bên trong khung */
+            margin-top: -10px;
+            margin-bottom: -6px;
+}
+
+        .cot1{
+            width: 10%;
+        }
+        .khung1{
+            width: 20%;
+        }
+        tbody{
+            border: 1px black solid;
+     }
+        .dongkhung th, tbody tr th , tbody tr td {
+                border: 1px black solid;
+                text-align: center;
+                padding: 5px;
+            }
+
+            
+    </style>
+</head>
+<body>
+
+        <table id="benngoai">
+        <thead>
+                
+                    <tr id="dong1">
+                        <th style="font-weight: normal;" colspan="5">Classic Movie Day</th>
+                    </tr>
+        </thead>
+        <tbody>
+<tr>
+<td style="border: 0px;">
+                <table id="bentrong">
+                        <tr class="dongkhung" >
+                            <th class="cot1"></th>
+                            <th class="khung1">5 PM</th>
+                            <th class="khung1">7 PM</th>
+                            <th>9 PM</th>
+                            <th class="khung1">11PM</th>
+                        </tr>
+                                        <tr>
+                                            <th>Screen one</th>
+                                            <td>Star Wars</td>
+                                            <td>Empire Strikes Back</td>
+                                            <td>Return of the Jedi</td>
+                                            <td>The Exorcist</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Screen two</th>
+                                            <td colspan="2">Dances with Wolves</td>
+                                            <td colspan="2">Gone With the Wind</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Screen three</th>
+                                            <td colspan="2">2001: A Space Odyssey</td>
+                                            <td>The Conversation</td>
+                                            <td>5 Easy Pieces</td>
+                                        </tr>
+                
+                </table>
+</td>
+</tr>
+        </tbody>
+        </table>
+</body>
+</html>
